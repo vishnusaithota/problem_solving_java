@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class PythagoreanTriplet {
@@ -18,7 +19,7 @@ public class PythagoreanTriplet {
             int a = m * m - n * n;
             int b = N;
             int c = m * m + n * n;
-            printInIncreasingOrder(a, b, c);
+            printInIncreasingOrder(a,c);
         } else {
             // Check if N is odd
             int m = (N + 1) / 2;
@@ -26,13 +27,13 @@ public class PythagoreanTriplet {
             int a = N;
             int b = 2 * m * n;
             int c = m * m + n * n;
-            printInIncreasingOrder(a, b, c);
+            printInIncreasingOrder(b,c);
         }
     }
 
-    public static void printInIncreasingOrder(int a, int b, int c) {
-        int[] triplet = {a, b, c};
-        java.util.Arrays.sort(triplet);
-        System.out.println(triplet[0] + " " + triplet[1] + " " + triplet[2]);
+    public static void printInIncreasingOrder(int a, int b) {
+        int[] pair = {a, b};
+        java.util.Arrays.sort(pair);
+        System.out.println(pair[0] + " " + pair[1]);
     }
 }
