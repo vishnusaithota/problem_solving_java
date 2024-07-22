@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class FtoCelcius {
 
     public static void main(String[] args) {
-
-        for (int i = 20; i <= 300; i+=20){
+        Scanner s = new Scanner(System.in);
+        int minF = s.nextInt();
+        int maxF = s.nextInt();
+        int step = s.nextInt();
+        for (int i = minF; i <= maxF; i+=step){
            int c = (int) ((5.0f/9) * (i - 32));
             System.out.println(i+ " "+ c);
         }
