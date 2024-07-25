@@ -22,8 +22,11 @@ public class Ops {
 
 //        printArray(BubbleSort.bubbleSort(arr));
 
-        printArray(SelectionSort.SelectionPort(arr));
+//        printArray(SelectionSort.SelectionPort(arr));
+
+        printArray(InsertionSort.insertionSort(arr));
     }
+
 
     public static int[] getInputs(){
         Scanner s = new Scanner(System.in);
