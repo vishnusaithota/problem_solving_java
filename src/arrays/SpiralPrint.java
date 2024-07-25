@@ -32,16 +32,18 @@ public class SpiralPrint {
                     System.out.print("\t");
                     System.out.print(arr[bottom][i]);
                 }
+                bottom--;
             }
-            bottom--;
+
 //
             if ( left <= right){
                 for (int i = bottom; i >= top ; i--) {
                     System.out.print("\t");
                     System.out.print(arr[i][left]);
                 }
+                left++;
             }
-            left++;
+
 
         }
     }
