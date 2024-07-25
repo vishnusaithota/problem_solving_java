@@ -8,7 +8,8 @@ public class Ops {
     public static void main(String[] args) {
 
 //        int[] arr = getInputs();
-        int[] arr = {1, 2, 4, 4, 7, 3, 11};
+//        int[] arr = {1, 2, 4, 4, 7, 3, 11};
+        int[] arr = {99, 88, 77, 66, 55};
 //        Arrays.sort(arr);
 //        printArray(arr);
 //        printArray(arr);
@@ -19,8 +20,9 @@ public class Ops {
 //        System.out.println(BinarySearch.binarySearch(arr, 12));
 //        System.out.println(BinarySearch.binarySearch(arr, 10));
 
-        printArray(BubbleSort.bubbleSort(arr));
+//        printArray(BubbleSort.bubbleSort(arr));
 
+        printArray(SelectionSort.SelectionPort(arr));
     }
 
     public static int[] getInputs(){
