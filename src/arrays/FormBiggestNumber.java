@@ -39,6 +39,8 @@ public class FormBiggestNumber {
             }
 
         }
+        if (arr[0].equals("0"))
+            return "0";
         return String.join("", arr);
     }
 }
