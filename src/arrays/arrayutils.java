@@ -12,14 +12,14 @@ public class arrayutils {
         int M = scanner.nextInt();
 
         // Create the matrix
-        int[][] matrix = new int[N][M];
+        int[][] arr = new int[N][M];
 
         // Read the matrix elements
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
-                matrix[i][j] = scanner.nextInt();
+                arr[i][j] = scanner.nextInt();
             }
         }
-        return  matrix;
+        return  arr;
     }
 }
